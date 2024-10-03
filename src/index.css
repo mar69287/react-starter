@@ -13,9 +13,14 @@ body {
   background-color: #0E181E;
 }
 
-/* .main {
-  @apply 
-} */
+.main {
+  min-height: 100vh;
+  @apply w-full pt-[4rem] md:pt-[4.5rem] lg:pt-[5rem] px-3 md:px-4 lg:px-5
+}
+
+.page-content {
+  @apply w-full py-4
+}
 
 .flex-center {
   @apply flex justify-center items-center;

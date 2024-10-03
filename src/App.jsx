@@ -11,12 +11,16 @@ function App() {
   return (
     <AuthProvider>
       <Navigation />
-      <Routes>
-        <Route element={<PrivateRoutes />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Route>
-        <Route path='/' element={<Home />} />
-      </Routes>
+      <main
+        className='main'
+      >
+        <Routes>
+          <Route element={<PrivateRoutes />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </main>
     </AuthProvider>
   )
 }
