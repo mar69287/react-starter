@@ -4,11 +4,13 @@ import Home from './pages/Home'
 import { AuthProvider } from './context/AuthContext'
 import PrivateRoutes from './utilities/PrivateRoutes'
 import Dashboard from './pages/Dashboard'
+import Navigation from './components/Navigation'
 
 function App() {
 
   return (
     <AuthProvider>
+      <Navigation />
       <Routes>
         <Route element={<PrivateRoutes />}>
           <Route path="/dashboard" element={<Dashboard />} />
