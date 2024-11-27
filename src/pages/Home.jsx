@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
 
@@ -7,12 +7,10 @@ const Home = () => {
   const { user } = useAuth();
   useEffect(() => {
     if (user) {
-        navigate('/dashboard')
+      navigate("/dashboard");
     }
-  })
-  return (
-    <div className='text-white'>Home</div>
-  )
-}
+  });
+  return <div className="main text-white">Home</div>;
+};
 
-export default Home
+export default Home;

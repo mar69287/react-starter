@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -10,16 +12,12 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
-  background-color: #0E181E;
+  background-color: #0e181e;
 }
 
 .main {
   min-height: 100vh;
-  @apply w-full pt-[4rem] md:pt-[4.5rem] lg:pt-[5rem] px-3 md:px-4 lg:px-5
-}
-
-.page-content {
-  @apply w-full py-4
+  @apply w-full mt-[4rem] md:mt-[4.5rem] lg:mt-[5rem] px-3 md:px-4 lg:px-5;
 }
 
 .flex-center {
